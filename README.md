@@ -14,9 +14,7 @@
 
   <h3 align="center">Prepwise: A job interview preparation platform powered by Vapi AI Voice agents</h3>
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+   
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -29,9 +27,7 @@
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
-## 🚨 Tutorial
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
 
 If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
@@ -481,7 +477,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 <details>
 <summary><code>lib/utils.ts</code></summary>
 
-```javascript
 import { interviewCovers, mappings } from "@/constants";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -537,7 +532,6 @@ export const getRandomInterviewCover = () => {
 <details>
 <summary><code>Generate questions prompt (/app/api/vapi/generate/route.tsx):</code></summary>
 
-```javascript
 `Prepare questions for a job interview.
         The job role is ${role}.
         The job experience level is ${level}.
@@ -558,7 +552,6 @@ export const getRandomInterviewCover = () => {
 <details>
 <summary><code>Generate feedback prompt (lib/actions/general.action.ts):</code></summary>
 
-```javascript
 prompt: `
         You are an AI interviewer analyzing a mock interview. Your task is to evaluate the candidate based on structured categories. Be thorough and detailed in your analysis. Don't be lenient with the candidate. If there are mistakes or areas for improvement, point them out.
         Transcript:
@@ -580,7 +573,6 @@ system:
 <details>
 <summary><code>Display feedback (app/(root)/interview/[id]/feedback/page.tsx):</code></summary>
 
-```javascript
     <section className="section-feedback">
       <div className="flex flex-row justify-center">
         <h1 className="text-4xl font-semibold">
@@ -675,7 +667,6 @@ system:
 <details>
 <summary><code>Dummy Interviews:</code></summary>
 
-```javascript
 export const dummyInterviews: Interview[] = [
   {
     id: "1",
